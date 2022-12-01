@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+body {
+  transition: 0.4s;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(170, 163, 163, 0.712);
+  font-family: "Poppins", sans-serif;
+  color: rgb(57, 57, 57);
+  /* height: 100vh; */
+}
+#preloader {
+  background: #000 url(images/giphy.gif) no-repeat center center;
+  background-size: 50%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#particles-js {
+  height: 500px;
+  background-color: rgba(0, 119, 255, 0.397);
+  background-blend-mode: darken;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/bg-image.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.particles-js-canvas-el {
+  position: absolute;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 300;
+  margin: 10px 0;
+  display: flex;
+  position: absolute;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+h3 {
+  font-family: fantasy;
+  font-size: 60px;
+  padding-top: 200px;
+  color: azure;
+  line-height: 70px;
+  font-weight: 500;
+  margin: 10px 0;
+  text-align: center;
+}
+
+p {
+  margin: 0px;
+  font-size: 20px;
+}
+
+a {
+  color: rgb(162, 0, 255);
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.dark a {
+  color: rgb(201, 174, 226);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.switch {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(39, 38, 38);
+  position: relative;
+}
+
+.flicker {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: 0.3s;
+  box-shadow: inset 4px 4px 4px rgb(255, 255, 255),
+    inset -4px -4px 4px rgb(195 193 198 /90%);
+}
+
+.dark {
+  background-color: rgb(57, 57, 57);
+  transition: 0.4s;
+}
+
+.moon {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+  position: absolute;
+  top: 5px;
+  left: 45px;
+}
+
+.dark .flicker {
+  transform: translateX(40px);
+}
+
+.dark > * {
+  color: rgb(255, 255, 255);
+}
+.contact {
+  width: 300px;
+  margin: 25px;
+  width: 350px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+/* .centrall {
+} */
+
+.main {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 30px; */
+}
+
+.main-text {
+  padding: 20px;
+  margin-bottom: 150px;
+}
+
+.square {
+  width: 100%;
+  margin: 1%;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.dark .square {
+  background-color: rgb(95, 95, 95);
+}
+
+#revenoo {
+  background-image: url("images/revenoo-app.png");
+  background-size: cover;
+}
+
+#burgerrator {
+  background-image: url("images/burgerrator.png");
+  background-size: cover;
+}
+
+#news {
+  background-image: url("images/news-app.png");
+  background-size: cover;
+}
+
+#dates {
+  background-image: url("images/dates-app.png");
+  background-size: cover;
+}
+
+.sub-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  position: relative;
+  width: 50%;
+  height: 350px;
+  display: block;
+  margin-bottom: 100px;
+}
+
+.cube {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  transform: rotate(-25deg) skew(25deg);
+}
+
+.cube:before {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 100%;
+  /* background-color: blue; */
+  transform: skewY(-45deg);
+  left: -20px;
+  bottom: -10px;
+}
+
+.cube:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 21px;
+  /* background-color: rgb(255, 0, 0); */
+  transform: skewX(-45deg);
+  left: -10px;
+  bottom: -20px;
+}
+
+#flutter {
+  left: 100px;
+  bottom: 80px;
+  background-image: url("images/flutter.png");
+  background-size: cover;
+  background-color: rgb(173, 112, 230);
+  box-shadow: -60px 60px 20px rgb(50 50 50/ 15%);
+}
+
+#flutter:before {
+  background-color: rgb(202, 164, 238);
+}
+
+#flutter:after {
+  background-color: rgb(156, 127, 184);
+}
+
+#firebase {
+  left: 250px;
+  bottom: 240px;
+  background-image: url("images/firebase.png");
+  background-size: contain;
+  background-color: rgb(241, 81, 193);
+  box-shadow: -100px 100px 20px rgb(50 50 50/ 15%);
+  background-repeat: no-repeat;
+}
+
+#firebase:before {
+  background-color: rgb(202, 164, 238);
+}
+
+#firebase:after {
+  background-color: rgb(156, 127, 184);
+}
+
+#dart {
+  left: 450px;
+  bottom: 200px;
+  background-image: url("images/dart-logo.jpg");
+  background-size: cover;
+  background-color: rgb(81, 241, 121);
+  box-shadow: -40px 40px 20px rgb(50 50 50/ 15%);
+}
+
+#dart:before {
+  background-color: rgb(88, 145, 110);
+}
+
+#dart:after {
+  background-color: rgb(43, 90, 61);
+}
+
+#python {
+  left: 350px;
+  bottom: 40px;
+  background-image: url("images/python.png");
+  background-size: cover;
+  background-color: rgb(31, 62, 104);
+  box-shadow: -80px 80px 20px rgb(50 50 50/ 15%);
+}
+
+#python:before {
+  background-color: rgb(90, 120, 202);
+}
+
+#python:after {
+  background-color: rgb(54, 124, 136);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 100px 30px;
+  background-color: rgb(136, 132, 132);
+}
+
+.dark footer {
+  background-color: rgb(28, 28, 28);
+}
+
+@media only screen and (min-width: 970px) {
+  .main-text {
+    width: 50%;
+  }
+
+  .square {
+    width: 48%;
+    height: 600px;
+    margin: 1%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .hero-image {
+    display: none;
+  }
+}

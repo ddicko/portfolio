@@ -1,171 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ibrahim Dicko Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="lightbox.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="images/profile_picture.png" type="image/x-icon">
 </head>
 
 <body>
-    <div id="preloader"></div>
-    <div id="particles-js">
-        <!-- <center> -->
-        <!-- </center> -->
-        <header>
-            <div class="menu">
-                <!-- LinkedIn -->
-                <a class="btn btn-primary" style="background-color: #0082ca;"
-                    href="https://www.linkedin.com/in/ibrahim-dicko/" role="button"><i
-                        class="fab fa-linkedin-in"></i></a>
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+        <nav class="navbar">
+            <a href="#" style="--i:1" class="active">Home</a>
+            <a href="#" style="--i:2">About</a>
+            <a href="#" style="--i:3">Skills</a>
+            <a href="#" style="--i:4">Portfolio</a>
+            <a href="#" style="--i:5">Contact</a>
+        </nav>
+    </header>
 
-                <!-- Twitter -->
-                <a class="btn btn-primary" style="background-color: #55acee;" href="https://twitter.com/Ibrahim52281597"
-                    role="button"><i class="fab fa-twitter"></i></a>
-
-                <!-- Github -->
-                <a class="btn btn-primary" style="background-color: #333333;" href="https://github.com/ddicko"
-                    role="button"><i class="fab fa-github"></i></a>
-
-                <!-- Youtube -->
-                <a class="btn btn-primary" style="background-color: #ed302f;"
-                    href="https://www.youtube.com/channel/UCuPUgn43A2H5Q2Nv26A0mSw" role="button"><i
-                        class="fab fa-youtube"></i></a>
-                <!-- Youtube -->
-                <a class="btn btn-primary" style="background-color: #0666af;" href="https://t.me/IbrahimDicko"
-                    role="button"><i class="fab fa-telegram"></i></a>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Ibrahim Dicko</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Perferendis omnis architecto eius reiciendis hic quia nostrum sunt necessitatibus veritatis nemo tempore
+                quaerat doloribus, porro distinctio numquam aliquam quas assumenda fugiat.
+            </p>
+            <div class="social-media">
+                <a href="#" style="--i:6"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" style="--i:7"><i class='bx bxl-github'></i></a>
+                <a href="#" style="--i:8"><i class='bx bxl-twitter'></i></a>
+                <a href="#" style="--i:9"><i class='bx bxl-youtube'></i></a>
             </div>
-
-            </button>
-            <div class="switch">
-                <div class="flicker"></div>
-                <div class="moon"></div>
-            </div>
-
-        </header>
-
-        <h3>Facing the rock, the water always wins, not by force but by perseverance</h3>
-
-    </div>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
-
-
-    <section class="main">
-        <div class="main-text">
-            <h1>Bonjour! Je suis Ibrahim Dicko &nbsp;
-                <a href="files/CV_Ibrahim_DICKO_FR.pdf">
-                    <button type="button" class="btn btn-success btn-floating">
-                        <i class="fas fa-download"></i> CV</button></a>
-            </h1>
-            <br>
-            <br>
-
-            <p>Bienvenue sur ma page,
-                Je suis développeur logiciel Malien 🇲🇱 </p>
-            <br />
-            My stack:
-            <p id="stack"> Python, Dart, Flutter, Firebase </p>
-            <h1>
-                <button type="button" class="btn btn-success" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
-                    <i class="fas fa-contact"></i> Contact me</button>
-                <!-- </a> -->
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Hello Visitor</h5>
-                                <button type="button" class="btn-close" data-mdb-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Prêt à Transformer Votre Vision en Réalité?</p>
-                                <p><small>Nous sommes
-                                        passionnés par la création d'expériences exceptionnelles et le développement de
-                                        solutions sur mesure pour répondre à vos besoins uniques.</small></p>
-
-                                <br>
-                                <p>📧 Contactez-moi dès maintenant : [<strong>dicko.dev@gmail.com =>
-                                        +22374915915</strong>] </p>
-                                <br>
-                                <p>
-                                    <b>
-
-                                        🚀🚀🚀 Votre Aventure Commence Ici!
-                                    </b>
-                                </p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </h1>
+            <a href="#" class="btn">Download CV</a>
         </div>
 
-        <div class="hero-image">
-            <div class="cube" id="python"></div>
-            <div class="cube" id="dart"></div>
-            <div class="cube" id="flutter"></div>
-            <div class="cube" id="firebase"></div>
+        <div class="home-img">
+            <img src="images/profile_picture.png" alt="">
         </div>
     </section>
 
 
-    <div class="container">
-        <div class="gallery">
-            <a href="images/app1.jpeg" data-lightbox="models" data-title="Caption1">
-                <img src="images/app1.jpeg">
-            </a>
-            <a href="images/app3.jpeg" data-lightbox="models" data-title="Caption3">
-                <img src="images/app3.jpeg">
-            </a>
-            <a href="images/app4.jpeg" data-lightbox="models" data-title="Caption4">
-                <img src="images/app4.jpeg">
-            </a>
-            <a href="images/app5.jpeg" data-lightbox="models" data-title="Caption5">
-                <img src="images/app5.jpeg">
-            </a>
-            <a href="images/app2.jpeg" data-lightbox="models" data-title="Caption2">
-                <img src="images/app2.jpeg">
-            </a>
-        </div>
-    </div>
-
-
-
-
-    <footer id="footer">
-        <p>Copyright © 2025 | dicko.dev@gmail.com</p>
-    </footer>
-
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="scripts.js"></script>
-    <!-- MDB -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
-    <script src="lightbox-plus-jquery.js"></script>
-    <script>
-        let loader = document.getElementById("preloader")
-        window.addEventListener("load", function () {
-            loader.style.display = "none";
-        })
-
-
-    </script>
 </body>
 
 </html>

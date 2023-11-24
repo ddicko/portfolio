@@ -1,5 +1,4 @@
-const switchElement = document.querySelector(".switch");
-
-switchElement.addEventListener('click', () => {
-    document.body.classList.toggle('dark')
+var typed = new Typed(".multiple-text", {
+    strings: ["Frontend Developer", "Youtuber", "Blogger"],
+    typeSpeed:100, backSpeed:100,backDelay:1000, loop:true
 });

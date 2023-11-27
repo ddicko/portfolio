@@ -85,7 +85,7 @@
         <div class="services-container">
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
-                <h3>Web Development</h3>
+                <h3>Development Mobile</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem dolores totam enim maxime
                     dignissimos! Enim ab iure, sapiente aspernatur pariatur maxime laudantium officia quae! Consequatur
                     exercitationem sed ab delectus deserunt.
@@ -95,7 +95,7 @@
 
             <div class="services-box">
                 <i class='bx bx-paint'></i>
-                <h3>Graphic Design</h3>
+                <h3>Automatisation (Python)</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem dolores totam enim maxime
                     dignissimos! Enim ab iure, sapiente aspernatur pariatur maxime laudantium officia quae! Consequatur
                     exercitationem sed ab delectus deserunt.
@@ -193,14 +193,30 @@
         <h2 class="heading">Contact <span>Me!</span></h2>
         <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" class="item" autocomplete="off" id="name">
+                    <div class="error-txt">Full Name can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input type="email" placeholder="Email Address" class="item" autocomplete="off" id="email">
+                    <div class="error-txt email">Email Address can't be blank</div>
+                </div>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <div class="input-field field">
+                    <input type="number" placeholder="Mobile Number" class="item" autocomplete="off" id="phone">
+                    <div class="error-txt">Phone Number can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Email Subject" class="item" autocomplete="off" id="subject">
+                    <div class="error-txt">Subject can't be blank</div>
+                </div>
             </div>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="textarea-field field">
+                <textarea name="" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"
+                id="message"></textarea>
+                <div class="error-txt">Message can't be blank</div>
+            </div>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
@@ -219,11 +235,20 @@
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-
+    <!-- animate profil (Youtuber, blogger, frontend developer) -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- send email -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- sweetalert2 js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- custom js -->
     <script src="scripts.js"></script>
 </body>
 
+<!-- Host: "smtp.elasticemail.com",
+Username: "dicko.dev@gmail.com",
+Password: "611025E458DA264CAED8E0C7AA6A1E31254B", -->
 </html>

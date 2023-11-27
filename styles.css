@@ -16,6 +16,7 @@
   --second-bg-color: #323946;
   --text-color:#fff;
   --main-color: #0ef;
+  --error-color: #d93025;
 }
 
 html {
@@ -371,9 +372,9 @@ span {
   margin: .7rem 0;
 } 
 
-.contact form .input-box input {
+/* .contact form .input-box input {
   width: 49%;
-}
+} */
 
 .contact form textarea {
   resize: none;
@@ -382,6 +383,45 @@ span {
 .contact form .btn {
   margin-top: 2rem;
   cursor: pointer;
+}
+
+.field .item {
+  width: 100%;
+  padding: 18px;
+  background: transparent;
+  border: 2px solid var(--main-color);
+  outline: none;
+  border-radius: 6px;
+  color: var(--text-color);
+  margin: 12px 0;
+}
+
+.field.error .item {
+  border-color: var(--error-color);
+}
+
+.field .item::placeholder {
+  color: rgba(255,255,255,.3);
+}
+
+.field .error-txt {
+  font-size: 14.5px;
+  color: var(--error-color);
+  text-align: left;
+  margin: -5px 0 10px;
+  display: none;
+}
+
+.field.error .error-txt {
+  display: block;
+}
+
+form .textarea-field .error-txt {
+  margin-top: -10px;
+}
+
+.input-box .input-field {
+  width: 48.5%;
 }
 
 .footer {
